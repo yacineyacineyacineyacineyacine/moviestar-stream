@@ -1,3 +1,4 @@
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Stack, Link } from 'expo-router';
 
 import { Button } from '~/components/Button';
@@ -6,7 +7,7 @@ import { ScreenContent } from '~/components/ScreenContent';
 
 export default function Home() {
   return (
-    <>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
         <ScreenContent path="app/index.tsx" title="Home" />
@@ -14,6 +15,6 @@ export default function Home() {
           <Button title="Show Details" />
         </Link>
       </Container>
-    </>
+      </GestureHandlerRootView>
   );
 }
