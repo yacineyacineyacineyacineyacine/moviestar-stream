@@ -7,3 +7,5 @@ const Page = () => {
         </View>
     )
 }
+
+export default Page
